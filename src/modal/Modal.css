@@ -1,0 +1,87 @@
+.Modal__wrap{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 1;
+    overflow: auto;
+}
+
+.Modal{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    background: #ffffff;
+    border-radius: 24px;
+    text-align: center;
+    margin: auto;
+}
+
+.Modal__close{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    right: -12px;
+    top: -12px;
+    background: #F2F2F2;
+    z-index: 2;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+.Modal__category{
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.5);
+    padding-bottom: 7px;
+}
+
+.Modal__name{
+    text-transform: capitalize;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: -0.02em;
+    color: #000000;
+    padding-bottom: 14px;
+}
+
+.Modal__price{
+    font-size: 60px;
+    line-height: 72px;
+    letter-spacing: -0.02em;
+    color: #000000;
+    padding-bottom: 24px;
+}
+
+
+.Modal__price span {
+    vertical-align: super;
+    font-size: 30px;
+    line-height: 35px;
+}
+
+@media (max-width: 575.98px) {
+    .Modal{
+        padding: 50px 8px;
+    }
+
+    
+    .Modal__close{
+        right: 5px;
+        top: 5px;
+    }
+}

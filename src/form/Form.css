@@ -1,0 +1,93 @@
+.Form{
+    display: flex;
+    flex-direction: column;
+}
+
+.Form__input-wrap{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.Form__input-error{
+    text-align: left;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: -0.02em;
+    color: #000000;
+}
+
+.Form__input-error span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    background: #E43F3F;
+    border-radius: 12px;
+    color: #ffffff;
+    font-size: 17px;
+    font-weight: bolder;
+}
+
+.Form__input-wrap label {
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: -0.02em;
+    color: #E43F3F;
+    padding-bottom: 15px;
+}
+
+.Form input {
+    width: 250px;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.02em;
+    color: rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 16px;
+    margin: 8px auto;
+    padding: 16px;
+    outline: none;
+}
+
+.Form input:focus{
+    border: 1px solid #4BCFA0;
+}
+
+.Form__btn-wrap{
+    width: 100%;
+    margin: 21px auto;
+}
+
+.Form button{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #ffffff;
+    border: none;
+    border-radius: 16px;
+    background: #4BCFA0;
+    padding: 16px 48px;
+    transition: 0.3s all ease;
+}
+
+.Form button span{
+    display: none;
+    width: 20px;
+    height: 20px;
+}
+
+.Form button:hover span, .Form button:focus span{
+    display: inline-block;
+}
