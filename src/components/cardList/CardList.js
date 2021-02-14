@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
-// Это наши замоканые данные
-import data from '../data';
+
+import Services from '../../services/Services';
 
 import './CardList.css'
 
@@ -9,9 +9,7 @@ import Spinner from '../spinner/Spinner';
 import Modal from '../modal/Modal';
 
 export default function CardList () {
-    /**
-     * Допустим мы уже получаем данные с сервера, а не с файла data
-     */
+    
     const [cardList, setCardList] = useState(null);
 
     /**
@@ -22,7 +20,9 @@ export default function CardList () {
      * Ну и потом мы немного изменим наш useEffect
      */
     useEffect(() => {
-        setCardList(data);
+
+        Services.getResource().then(data => setCardList(data))
+
         document.querySelector('body').style.overflow = modalItem ? 'hidden' : 'auto';
     }, [modalItem]);
 

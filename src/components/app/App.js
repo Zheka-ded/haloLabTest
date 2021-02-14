@@ -1,5 +1,5 @@
 import './App.css';
-import CardList from '../cardList/CardList'
+import CardList from '../cardList/CardList';
 
 export default function App() {
   return (
