@@ -81,4 +81,8 @@
         flex-direction: column;
         align-items: flex-start;
     }
+
+    .Card__item-btn-wrap, .Card__item-btn-wrap button{
+        width: 100%;
+    }
 }
