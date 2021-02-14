@@ -1,5 +1,6 @@
 import { useState } from 'react';
-import iconArrowRight from '../img/arrow-right.svg'
+// import iconArrowRight from '../img/arrow-right.svg';
+import ArrowRightSvg from '../img/arrowRightSvg';
 import './Form.css';
 
 export default function Form (props) {
@@ -122,7 +123,8 @@ export default function Form (props) {
                 </div>
 
             <div className="Form__btn-wrap">
-                <button type="submit" >ORDER <span><img src={iconArrowRight} alt={iconArrowRight}/></span> </button>
+                {/* <button type="submit" >ORDER <span><img src={iconArrowRight} alt={iconArrowRight}/></span> </button> */}
+                <button type="submit" >ORDER <span><ArrowRightSvg /></span> </button>
             </div>
 
         </form>
